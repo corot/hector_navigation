@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node pkg="hector_exploration_gateway" type="exploration_planner_gateway" name="hector_exploration_gateway" output="screen">
+<!--     <rosparam file="$(find turtlebot_navigation)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find turtlebot_navigation)/param/global_costmap_params.yaml" command="load" /> -->
+
+		<param name="frequency"    value="1.0"/>
+		<param name="close_enough" value="0.1"/>
+		<param name="goal_timeout" value="15.0"/>
+
+    <rosparam file="$(find hector_exploration_gateway)/config/costmap.yaml" command="load" />
+  </node>
+</launch>
