@@ -1,0 +1,26 @@
+<package>
+  <name>hector_exploration_node</name>
+  <version>0.1.0</version>
+  <description>hector_exploration_node is a node that provides exploration plans via a service server</description>
+
+  <maintainer email="meyer@fsr.tu-darmstadt.de">Johannes Meyer</maintainer>
+
+  <author>Stefan Kohlbrecher</author>
+  
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_exploration_node</url>
+  <url type="repository">https://github.com/tu-darmstadt-ros-pkg/hector_navigation</url>
+  <url type="bugtracker">https://github.com/tu-darmstadt-ros-pkg/hector_navigation/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>hector_exploration_planner</build_depend>
+  <build_depend>hector_nav_msgs</build_depend>
+
+  <run_depend>hector_exploration_planner</run_depend>
+  <run_depend>hector_nav_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

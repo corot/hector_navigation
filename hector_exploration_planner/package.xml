@@ -1,0 +1,46 @@
+<package>
+  <name>hector_exploration_planner</name>
+  <version>0.1.0</version>
+  <description>hector_exploration_planner is a planner that can both plan paths to goal points and generate goals to explore unknown environments</description>
+
+  <maintainer email="meyer@fsr.tu-darmstadt.de">Johannes Meyer</maintainer>
+
+  <author>Mark Sollweck</author>
+  <author>Stefan Kohlbrecher</author>
+  <author>Florian Berz</author>
+  
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_exploration_planner</url>
+  <url type="repository">https://github.com/tu-darmstadt-ros-pkg/hector_navigation</url>
+  <url type="bugtracker">https://github.com/tu-darmstadt-ros-pkg/hector_navigation/issues</url>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>costmap_2d</build_depend>
+  <build_depend>nav_core</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>rosconsole</build_depend>
+  <build_depend>hector_nav_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>costmap_2d</run_depend>
+  <run_depend>nav_core</run_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>rosconsole</run_depend>
+  <run_depend>hector_nav_msgs</run_depend>
+
+  <export>
+    <nav_core plugin="${prefix}/hector_exploration_base_global_planner_plugin.xml"/>
+    <!-- <cpp lflags="-L${prefix}/lib -Wl,-rpath,${prefix}/lib -lhector_exploration_planner" cflags="-I${prefix}/include"/> -->
+  </export>
+</package>

@@ -1,0 +1,27 @@
+<package>
+  <name>hector_navigation</name>
+  <version>0.1.0</version>
+  <description>
+    Hector navigation.
+  </description>
+
+  <maintainer email="meyer@fsr.tu-darmstadt.de">Johannes Meyer</maintainer>
+
+  <author>Jorge Santos</author>
+  
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/hector_exploration_planner</url>
+  <url type="repository">https://github.com/tu-darmstadt-ros-pkg/hector_navigation</url>
+  <url type="bugtracker">https://github.com/tu-darmstadt-ros-pkg/hector_navigation/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>hector_exploration_node</run_depend>
+  <run_depend>hector_exploration_gateway</run_depend>
+  <run_depend>hector_exploration_planner</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
